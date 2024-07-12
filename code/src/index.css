@@ -1,3 +1,39 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* styles.css */
+.grid {
+  display: grid;
+  grid-template-rows: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem; /* Ajustez cette valeur selon vos besoins */
+}
+
+.grid-item {
+  padding: 0; /* Supprimer tout padding supplémentaire */
+  margin: 0; /* Supprimer tout marge supplémentaire */
+}
+
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+.sm\:px-5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.bg-gray-100 {
+  background-color: #f7fafc;
+}
